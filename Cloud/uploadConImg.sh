@@ -2,7 +2,7 @@
 # $1: bluemix endpoint $2: namespace $3: imageName $4: imageID $5: localimagename  $6: bluemix user
 if [ $# -lt 4 ]; then
  echo "uploadConImage endpoint namespace imageName imageFile localname"
-  echo "uploadConImage endpoint namespace imageName imageID"
+ echo "uploadConImage endpoint namespace imageName imageID"
  exit
 fi
 blueEP=$1
@@ -48,11 +48,11 @@ done
 if [ $# -eq 4 ]; then
  imageID=$4
 else
- echo "import dsm image to local registry..."
+ echo "import docker image to local registry..."
  docker load -i $imageFile
  imageID=`docker images |grep "$5" |awk '{print $3}'`
 fi
-echo "upload dsm image to Bluemix docker hub..."
+echo "upload docker image to Bluemix docker hub..."
 docker tag  -f $imageID  registry.$blueEP/$namespace/$imageName:v1
 while true; do
 docker push  registry.$blueEP/$namespace/$imageName:v1
