@@ -1,8 +1,8 @@
 #!/bin/bash
 # $1: bluemix endpoint $2: namespace $3: imageName $4: imageID $5: localimagename  $6: bluemix user
 if [ $# -lt 4 ]; then
- echo "uploadCtnImage endpoint namespace imageName imageFile localname"
-  echo "uploadCtnImage endpoint namespace imageName imageID"
+ echo "uploadConImage endpoint namespace imageName imageFile localname"
+  echo "uploadConImage endpoint namespace imageName imageID"
  exit
 fi
 blueEP=$1
