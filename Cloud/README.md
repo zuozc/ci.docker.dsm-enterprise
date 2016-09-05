@@ -3,7 +3,7 @@
 
 ##Upload docker image to Bluemix Container service
  
- 1.    Install CLI plugins and login
+1.    Install CLI plugins and login
 Firstly, you need to install CLI command on your system. You can refer to https://new-console.ng.bluemix.net/docs/containers/container_cli_cfic_install.html
  
 1.1   Install docker
