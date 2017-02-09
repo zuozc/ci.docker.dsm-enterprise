@@ -23,11 +23,11 @@ Building the IBM Data Server Manager image
 
     2. Edit setup.conf
     
-    NOTE: To change the default password to login DSM. 
-	    2.1. RUN .\dsutil\bin\crypt.bat on Windows; run .\dsutil\bin\crypt.sh on Linux. 
-	    2.2. ENTER new password twice and you will get a crypt string for your password.
-	    2.3. EDIT setup.conf file, and REPLACE "XXXXXXXXX" in "admin.password=XXXXXXXXX" with your crypt string.
-	    2.4. SAVE this file.
+    NOTE: To change the default password to login DSM
+	    2.1. RUN .\dsutil\bin\crypt.bat on Windows; RUN .\dsutil\bin\crypt.sh on Linux
+	    2.2. ENTER new password twice and you will get a crypt string for your password
+	    2.3. EDIT setup.conf file, and REPLACE "XXXXXXXXX" in "admin.password=XXXXXXXXX" with your crypt string
+	    2.4. SAVE this file
      
     3. Place start_dsm.sh
 
