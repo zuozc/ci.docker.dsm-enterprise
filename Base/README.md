@@ -31,10 +31,10 @@ Building the IBM Data Server Manager image
      
     3. Place start_dsm.sh
 
-    4. Download the ubuntu 14.04 image
+    4. Download the ubuntu 16.04 image
 
 ```Bash
-docker pull ubuntu:14.04
+docker pull ubuntu:16.04
 ```
 
     5. Move to the directory base/
@@ -57,7 +57,7 @@ docker run -itd -p 11080:11080 <image-name>
     
 ```Bash
 docker run -itd -p 11080:11080 -v <config-folder>:/opt/ibm-datasrvrmgr/Config -v <log-folder>:/opt/ibm-datasrvrmgr/logs <image-name>
-```
+
 
 	e.g. Suppose you've clone this project into "/opt/ci.docker.dsm-enterprise" and your image is called "dsm". You can run:
 
