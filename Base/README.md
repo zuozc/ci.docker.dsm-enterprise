@@ -45,6 +45,18 @@ docker pull ubuntu:14.04
 docker build  -t <image-name> -f Dockerfile .
 ```
                             
-Running the images
+Run and Deploy IBM Data Server Manager image and expose port 11080
 
-Deploy IBM Data Server Manager image and expose port 11080
+    1. Mount nothing: this will create a clean DSM container
+    
+```Bash
+docker run -itd -p 11080:11080 <image-name>
+```
+	
+    2. Mount Config files and logs: this will create a DSM container using config files and logs specified
+    
+```Bash
+docker run -itd -p 11080:11080 -v <config-folder>:/opt/ibm-datasrvrmgr/Config -v <log-folder>:/opt/ibm-datasrvrmgr/logs <image-name>
+```
+
+
