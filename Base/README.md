@@ -59,8 +59,21 @@ docker run -itd -p 11080:11080 <image-name>
 docker run -itd -p 11080:11080 -v <config-folder>:/opt/ibm-datasrvrmgr/Config -v <log-folder>:/opt/ibm-datasrvrmgr/logs <image-name>
 ```
 
-e.g. Suppose you've clone this project into "/opt/ci.docker.dsm-enterprise" and your image is called "dsm". You can run:
 
-	docker run -itd -p 11080:11080 -v /opt/ci.docker.dsm-enterprise/Base/example/Config:/opt/ibm-datasrvrmgr/Config -v /opt/ci.docker.dsm-enterprise/Base/example/logs:/opt/ibm-datasrvrmgr/logs dsm
+e.g. Suppose you've clone this project into "/opt/ci.docker.dsm-enterprise", your old dsm container is called "dsm" and your build image called "dsm_image". You can:
 
+    1. Externalize the logs and configs from the old container:
+    
+```Bash
+docker exec -it dsm bash
+scp -r /opt/ibm-datasrvrmgr/Config root@<host-ip>:/opt/ci.docker.dsm-enterprise/Base/example
+scp -r /opt/ibm-datasrvrmgr/logs root@<host-ip>:/opt/ci.docker.dsm-enterprise/Base/example
+exit
+```
+
+    2. Mount logs and configs back to a new container:
+
+```Bash
+docker run -itd -p 11080:11080 -v /opt/ci.docker.dsm-enterprise/Base/example/Config:/opt/ibm-datasrvrmgr/Config -v /opt/ci.docker.dsm-enterprise/Base/example/logs:/opt/ibm-datasrvrmgr/logs dsm_image
+```
 
