@@ -1,0 +1,386 @@
+stdout	(1)	Feb 13, 2017 3:16:24 PM	initializing.. 
+stdout	(1)	Feb 13, 2017 3:16:24 PM	setup StdOut
+stdout	(1)	Feb 13, 2017 3:16:24 PM	setup StdErr
+stdout	(1)	Feb 13, 2017 3:16:24 PM	Checking for Process ID:
+stdout	(1)	Feb 13, 2017 3:16:24 PM	2017/02/13 15:16:24
+stdout	(1)	Feb 13, 2017 3:16:24 PM	Process ID: 19517
+stdout	(1)	Feb 13, 2017 3:16:24 PM	SERVER STATUS: INITIALIZING
+stdout	(32)	Feb 13, 2017 3:16:24 PM	Launching dsweb (WebSphere Application Server 8.5.5.9/wlp-1.0.12.cl50920160227-1523) on IBM J9 VM, version pxa6480sr3-20160428_01 (SR3) (en_US)
+stdout	(32)	Feb 13, 2017 3:16:24 PM	[AUDIT   ] CWWKE0001I: The server dsweb has been launched.
+stdout	(38)	Feb 13, 2017 3:16:25 PM	[AUDIT   ] CWWKG0028A: Processing included configuration resource: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/wlp/usr/servers/dsweb/SSLConfig.xml
+stdout	(38)	Feb 13, 2017 3:16:25 PM	[AUDIT   ] CWWKG0028A: Processing included configuration resource: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/wlp/usr/servers/dsweb/TLSOnlyConfig.xml
+stdout	(38)	Feb 13, 2017 3:16:25 PM	[AUDIT   ] CWWKG0028A: Processing included configuration resource: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/wlp/usr/servers/dsweb/dswebapp.xml
+stdout	(38)	Feb 13, 2017 3:16:30 PM	[AUDIT   ] CWWKZ0058I: Monitoring dropins for applications.
+stdout	(41)	Feb 13, 2017 3:16:32 PM	[AUDIT   ] CWPKI0803A: SSL certificate created in 2.332 seconds. SSL key file: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/work/dsweb/resources/security/key.jks
+stderr	(73)	Feb 13, 2017 3:16:32 PM	Feb 13, 2017 3:16:32 PM com.ibm.ws.webcontainer.osgi.DynamicVirtualHost addWebApplication
+INFO: SRVE0250I: Web Module IBM.OPTIM.DATATOOLS.webapp_v41 has been bound to default_host.
+stdout	(73)	Feb 13, 2017 3:16:32 PM	[AUDIT   ] CWWKT0016I: Web application available (default_host): http://host-10-0-11-236.openstacklocal:11080/
+stderr	(73)	Feb 13, 2017 3:16:32 PM	Feb 13, 2017 3:16:32 PM SessionMgrComponentImpl initialize
+INFO: SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+stderr	(73)	Feb 13, 2017 3:16:32 PM	Feb 13, 2017 3:16:32 PM SessionContextRegistryImpl getSessionContext
+INFO: SESN0176I: A new session context will be created for application key default_host/
+stderr	(73)	Feb 13, 2017 3:16:32 PM	Feb 13, 2017 3:16:32 PM IDGeneratorImpl IDGeneratorImpl
+INFO: SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+stderr	(73)	Feb 13, 2017 3:16:32 PM	Feb 13, 2017 3:16:32 PM com.ibm.ws.jsp.JspOptions populateOptions
+INFO: JSPG8502I: The value of the JSP attribute jdkSourceLevel is "15".
+stderr	(73)	Feb 13, 2017 3:16:32 PM	Feb 13, 2017 3:16:32 PM com.ibm.ws.webcontainer.servlet.ServletWrapper init
+INFO: SRVE0242I: [dsweb] [/] [External2OSGiServlet]: Initialization successful.
+stdout	(73)	Feb 13, 2017 3:16:32 PM	com.ibm.datatools.corehttpservices.util.HttpServicesSystem: ServletBridgeRef setup ..com.ibm.datatools.shared.servletbridge.ExtendedOSGiBridgeServlet@4712f163
+stdout	(73)	Feb 13, 2017 3:16:32 PM	setting javax.servlet.context.tempdir : /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/work
+stdout	(73)	Feb 13, 2017 3:16:32 PM	Cleanup: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/work/eclipse
+stdout	(87)	Feb 13, 2017 3:16:33 PM	DSINSTALL_PARALLEL_START = false
+stdout	(87)	Feb 13, 2017 3:16:33 PM	DSINSTALL_PARALLEL_INSTALL = true
+stdout	(87)	Feb 13, 2017 3:16:33 PM	DSINSTALL_LAZY_SITES =
+stdout	(87)	Feb 13, 2017 3:16:33 PM	IBM datatools web: ..bootstrapping
+stdout	(87)	Feb 13, 2017 3:16:33 PM	dshome:</home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr>
+stdout	(87)	Feb 13, 2017 3:16:33 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/dsweb-ots-thirdparty
+stdout	(87)	Feb 13, 2017 3:16:33 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/dsweb-reactui
+stdout	(87)	Feb 13, 2017 3:16:33 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/dsweb-common
+stdout	(87)	Feb 13, 2017 3:16:33 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/eclipseweb-admin-bluehelix
+stdout	(87)	Feb 13, 2017 3:16:33 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/eclipseweb-admin-bigsql
+stdout	(87)	Feb 13, 2017 3:16:33 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/eclipseweb-luw-cmd
+stdout	(87)	Feb 13, 2017 3:16:34 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/coreservices-common-runtime
+stdout	(87)	Feb 13, 2017 3:16:34 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/dsweb-ots
+stdout	(87)	Feb 13, 2017 3:16:34 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/basichealth
+stdout	(87)	Feb 13, 2017 3:16:34 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/dsoe
+stdout	(87)	Feb 13, 2017 3:16:34 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/dsoe-qtreport
+stdout	(87)	Feb 13, 2017 3:16:34 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/eclipseweb-compatibility
+stdout	(87)	Feb 13, 2017 3:16:34 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/eclipseweb-admin-zseries
+stdout	(87)	Feb 13, 2017 3:16:34 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/dsoe-zos
+stdout	(87)	Feb 13, 2017 3:16:34 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/coreservices-common-runtime-server
+stdout	(87)	Feb 13, 2017 3:16:36 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/dsweb-ots-blushift
+stdout	(87)	Feb 13, 2017 3:16:36 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/wtirdf
+stdout	(87)	Feb 13, 2017 3:16:36 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/eclipseweb-admin-luw
+stdout	(87)	Feb 13, 2017 3:16:38 PM	Bootstrap bundle: com.ibm.datatools.common.services.util: file:/home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/CommonWeb/com.ibm.datatools.common.services.util_2.4.0.v20161116_1300.jar
+stdout	(87)	Feb 13, 2017 3:16:38 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/CommonWeb
+stdout	(87)	Feb 13, 2017 3:16:40 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/eclipseweb-common
+stdout	(87)	Feb 13, 2017 3:16:40 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/iocm-extern
+stdout	(87)	Feb 13, 2017 3:16:41 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/com-ibm-im-ac
+stdout	(87)	Feb 13, 2017 3:16:42 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/oqwt-common
+stdout	(87)	Feb 13, 2017 3:16:42 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/dsoe-luw
+stdout	(87)	Feb 13, 2017 3:16:42 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/dsweb-ots-bluhelix
+stdout	(87)	Feb 13, 2017 3:16:42 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/analytics-idax-spark-clues
+stdout	(87)	Feb 13, 2017 3:16:42 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/health-summary
+stdout	(87)	Feb 13, 2017 3:16:42 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/eclipseweb-admin-base
+stdout	(87)	Feb 13, 2017 3:16:42 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/db2-solution-pack
+stdout	(87)	Feb 13, 2017 3:16:42 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/eclipseweb-dbexplorer
+stdout	(87)	Feb 13, 2017 3:16:42 PM	processing: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/dscomponents/shs-alert-notification
+stdout	(87)	Feb 13, 2017 3:16:50 PM	ProfileManager getInstance
+stdout	(157)	Feb 13, 2017 3:16:52 PM	initEMFObjects: thread ID: 157
+stderr	(185)	Feb 13, 2017 3:16:52 PM	Feb 13, 2017 3:16:52 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'udxservices'
+stdout	(185)	Feb 13, 2017 3:16:52 PM	HTTPContextRegistry started: /udxservices
+stdout	(192)	Feb 13, 2017 3:16:52 PM	DS_System Logger Initialized: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/logs/DS_System
+stderr	(196)	Feb 13, 2017 3:16:52 PM	Feb 13, 2017 3:16:52 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'logViewerDispatcher'
+stdout	(196)	Feb 13, 2017 3:16:53 PM	HTTPContextRegistry started: /logviewer
+stdout	(191)	Feb 13, 2017 3:16:53 PM	STARTED CoreServiceComponent
+stderr	(198)	Feb 13, 2017 3:16:53 PM	Feb 13, 2017 3:16:53 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'WEB-INF/coreServicesWebDispatcher'
+stdout	(198)	Feb 13, 2017 3:16:53 PM	HTTPContextRegistry started: /coreservices
+stdout	(87)	Feb 13, 2017 3:16:53 PM	no logging.home found
+stderr	(87)	Feb 13, 2017 3:16:53 PM	[err] log4j:WARN No appenders could be found for logger (com.ibm.im.ac.logging.osgi.LogOSGiActivator).
+stderr	(87)	Feb 13, 2017 3:16:53 PM	[err] log4j:WARN Please initialize the log4j system properly.
+stderr	(87)	Feb 13, 2017 3:16:53 PM	[err] log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+stderr	(73)	Feb 13, 2017 3:16:54 PM	Feb 13, 2017 3:16:54 PM com.ibm.ws.webcontainer.servlet.ServletWrapper init
+INFO: SRVE0242I: [dsweb] [/] [consoleservlet]: Initialization successful.
+stderr	(73)	Feb 13, 2017 3:16:54 PM	Feb 13, 2017 3:16:54 PM com.ibm.ws.webcontainer.servlet.ServletWrapper init
+INFO: SRVE0242I: [dsweb] [/] [RootContextServlet]: Initialization successful.
+stdout	(73)	Feb 13, 2017 3:16:54 PM	[AUDIT   ] CWWKZ0001I: Application dsweb started in 21.974 seconds.
+stdout	(46)	Feb 13, 2017 3:16:54 PM	[AUDIT   ] CWWKF0012I: The server installed the following features: [servlet-3.0, jsp-2.2, ssl-1.0, jndi-1.0, distributedMap-1.0, appSecurity-2.0].
+stdout	(46)	Feb 13, 2017 3:16:54 PM	[AUDIT   ] CWWKF0011I: The server dsweb is ready to run a smarter planet.
+stderr	(204)	Feb 13, 2017 3:16:56 PM	[err] ----------------------------------------------------------------
+stderr	(204)	Feb 13, 2017 3:16:56 PM	[err] Mon Feb 13 15:16:56 CST 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.1 - (1643489): instance a816c00e-015a-3654-d331-00001612ca38 
+on database directory /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/Config/default_rep_db with class loader org.eclipse.osgi.internal.loader.EquinoxClassLoader@fbdeb077[org.apache.derby.core:10.5.1.1_v201501121639(id=303)] 
+Loaded from file:/home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/work/eclipse/configuration/org.eclipse.osgi/303/0/.cp/derby.jar
+stderr	(204)	Feb 13, 2017 3:16:56 PM	[err] java.vendor=IBM Corporation
+java.runtime.version=pxa6480sr3-20160428_01 (SR3)
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Linux amd64-64 Compressed References 20160427_301573 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20160427_1620_B301573
+JIT  - tr.r14.java.green_20160329_114288
+GC   - R28_Java8_SR3_20160427_1620_B301573_CMPRSS
+J9CL - 20160427_301573
+user.dir=/home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr
+stderr	(204)	Feb 13, 2017 3:16:56 PM	[err] os.name=Linux
+os.arch=amd64
+os.version=3.16.0-30-generic
+stderr	(204)	Feb 13, 2017 3:16:56 PM	[err] derby.system.home=null
+stderr	(204)	Feb 13, 2017 3:16:56 PM	[err] derby.stream.error.field=java.lang.System.err
+stderr	(204)	Feb 13, 2017 3:17:09 PM	[err] Database Class Loader started - derby.database.classpath=''
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] com.ibm.datatools.common.services.util.BaseException: java.sql.SQLTimeoutException: Login timeout exceeded.
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at com.ibm.datatools.common.db.connmgt.impl.DBConnectionManagementService.makeNewConnection(DBConnectionManagementService.java:533)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at java.lang.reflect.Method.invoke(Method.java:508)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.doInvoke(ServiceInvoker.java:64)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.invoke(ServiceInvoker.java:78)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invoke(ServiceTCCLInterceptor.java:36)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.osgi.service.importer.support.LocalBundleContextAdvice.invoke(LocalBundleContextAdvice.java:59)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at com.sun.proxy.$Proxy24.makeNewConnection(Unknown Source)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at com.ibm.datatools.common.repository.mgr.DerbyEmbeddedDBInstance.init(DerbyEmbeddedDBInstance.java:122)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at java.lang.reflect.Method.invoke(Method.java:508)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1413)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1374)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1334)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:473)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at java.security.AccessController.doPrivileged(AccessController.java:620)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:729)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.completeRefresh(AbstractDelegatedExecutionApplicationContext.java:276)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor$CompleteRefreshTask.run(DependencyWaiterApplicationContextExecutor.java:145)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at java.lang.Thread.run(Thread.java:785)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] Caused by:
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] java.sql.SQLTimeoutException: Login timeout exceeded.
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.apache.derby.jdbc.Driver20.timeLogin(Unknown Source)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at com.ibm.datatools.common.db.connmgt.impl.DBConnection.createConnectionInternal(DBConnection.java:375)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at com.ibm.datatools.common.db.connmgt.impl.DBConnection.createConnection(DBConnection.java:265)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at com.ibm.datatools.common.db.connmgt.impl.DBConnectionManagementService.makeNewConnection(DBConnectionManagementService.java:480)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	... 41 more
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] Caused by:
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] java.sql.SQLException: Login timeout exceeded.
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+stderr	(197)	Feb 13, 2017 3:17:23 PM	[err] 	... 52 more
+stderr	(248)	Feb 13, 2017 3:17:23 PM	Feb 13, 2017 3:17:23 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'WEB-INF/webDispatcher'
+stderr	(250)	Feb 13, 2017 3:17:24 PM	Feb 13, 2017 3:17:24 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet '/WebContent'
+stdout	(248)	Feb 13, 2017 3:17:24 PM	HTTPContextRegistry started: /querytunerConfig
+stdout	(250)	Feb 13, 2017 3:17:24 PM	HTTPContextRegistry started: /lic
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] java.sql.SQLException: java.sql.SQLTimeoutException: Login timeout exceeded.
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at com.ibm.datatools.common.db.connmgt.impl.DBCPConnectionFactory.createConnection(DBCPConnectionFactory.java:52)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:290)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.apache.commons.pool.impl.GenericObjectPool.addObject(GenericObjectPool.java:996)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at com.ibm.datatools.common.db.connmgt.impl.DBCPDataSource.initializePool(DBCPDataSource.java:141)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at com.ibm.datatools.common.db.connmgt.impl.DBCPDataSource.getConnection(DBCPDataSource.java:159)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at com.ibm.datatools.common.db.connmgt.impl.DBConnectionManagementService.getConnection(DBConnectionManagementService.java:917)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at java.lang.reflect.Method.invoke(Method.java:508)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.doInvoke(ServiceInvoker.java:64)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.invoke(ServiceInvoker.java:78)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invoke(ServiceTCCLInterceptor.java:36)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.osgi.service.importer.support.LocalBundleContextAdvice.invoke(LocalBundleContextAdvice.java:59)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at com.sun.proxy.$Proxy24.getConnection(Unknown Source)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at com.ibm.datatools.common.repository.mgr.DatabaseProfileInstance.getConnection(DatabaseProfileInstance.java:75)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at com.ibm.datatools.common.repository.mgr.DatabaseProfileInstance.getConnection(DatabaseProfileInstance.java:68)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at com.ibm.im.ac.datastore.dsm.DSMRepositoryConnectionFactory.getConnection(DSMRepositoryConnectionFactory.java:61)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at com.ibm.im.ac.datastore.RootDatastore.getConnection(RootDatastore.java:76)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at com.ibm.im.ac.datastore.RootDatastore.tableExists(RootDatastore.java:240)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at com.ibm.im.ac.datastore.RootDatastore.initializeDatastore(RootDatastore.java:166)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at com.ibm.im.ac.datastore.RootDatastore.setConnectionFactory(RootDatastore.java:51)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at com.ibm.im.ac.datastore.dsm.DSMRepositoryConnectionFactory.init(DSMRepositoryConnectionFactory.java:25)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at java.lang.reflect.Method.invoke(Method.java:508)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1413)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1374)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1334)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:473)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at java.security.AccessController.doPrivileged(AccessController.java:620)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:729)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.completeRefresh(AbstractDelegatedExecutionApplicationContext.java:276)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor$CompleteRefreshTask.run(DependencyWaiterApplicationContextExecutor.java:145)
+stderr	(242)	Feb 13, 2017 3:17:53 PM	[err] 	at java.lang.Thread.run(Thread.java:785)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] java.sql.SQLException: java.sql.SQLTimeoutException: Login timeout exceeded.
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at com.ibm.datatools.common.db.connmgt.impl.DBCPConnectionFactory.createConnection(DBCPConnectionFactory.java:52)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:290)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.apache.commons.pool.impl.GenericObjectPool.addObject(GenericObjectPool.java:996)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at com.ibm.datatools.common.db.connmgt.impl.DBCPDataSource.initializePool(DBCPDataSource.java:141)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at com.ibm.datatools.common.db.connmgt.impl.DBCPDataSource.getConnection(DBCPDataSource.java:159)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at com.ibm.datatools.common.db.connmgt.impl.DBConnectionManagementService.getConnection(DBConnectionManagementService.java:917)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at java.lang.reflect.Method.invoke(Method.java:508)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.doInvoke(ServiceInvoker.java:64)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.invoke(ServiceInvoker.java:78)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invoke(ServiceTCCLInterceptor.java:36)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.osgi.service.importer.support.LocalBundleContextAdvice.invoke(LocalBundleContextAdvice.java:59)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at com.sun.proxy.$Proxy24.getConnection(Unknown Source)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at com.ibm.datatools.common.repository.mgr.DatabaseProfileInstance.getConnection(DatabaseProfileInstance.java:75)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at com.ibm.datatools.common.repository.mgr.DatabaseProfileInstance.getConnection(DatabaseProfileInstance.java:68)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at com.ibm.im.ac.datastore.dsm.DSMRepositoryConnectionFactory.getConnection(DSMRepositoryConnectionFactory.java:61)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at com.ibm.im.ac.datastore.RootDatastore.getConnection(RootDatastore.java:76)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at com.ibm.im.ac.datastore.RootDatastore.tableExists(RootDatastore.java:240)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at com.ibm.im.ac.datastore.RootDatastore.initializeDatastore(RootDatastore.java:166)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at com.ibm.im.ac.datastore.RootDatastore.setConnectionFactory(RootDatastore.java:51)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at com.ibm.im.ac.datastore.dsm.DSMRepositoryConnectionFactory.init(DSMRepositoryConnectionFactory.java:25)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at java.lang.reflect.Method.invoke(Method.java:508)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1413)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1374)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1334)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:473)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at java.security.AccessController.doPrivileged(AccessController.java:620)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:729)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.completeRefresh(AbstractDelegatedExecutionApplicationContext.java:276)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor$CompleteRefreshTask.run(DependencyWaiterApplicationContextExecutor.java:145)
+stderr	(242)	Feb 13, 2017 3:18:23 PM	[err] 	at java.lang.Thread.run(Thread.java:785)
+stderr	(261)	Feb 13, 2017 3:18:31 PM	Feb 13, 2017 3:18:31 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'userPreferenceDispatcher'
+stdout	(261)	Feb 13, 2017 3:18:31 PM	HTTPContextRegistry started: /dssettings
+stdout	(285)	Feb 13, 2017 3:18:34 PM	SSOExtURLAccessHandler initialized
+stderr	(290)	Feb 13, 2017 3:18:34 PM	Feb 13, 2017 3:18:34 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet '/WebContent'
+stdout	(290)	Feb 13, 2017 3:18:34 PM	HTTPContextRegistry started: /repMgr
+stderr	(292)	Feb 13, 2017 3:18:34 PM	Feb 13, 2017 3:18:34 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet '/WebContent'
+stdout	(292)	Feb 13, 2017 3:18:34 PM	HTTPContextRegistry started: /dswebcustomauth
+stderr	(293)	Feb 13, 2017 3:18:34 PM	Feb 13, 2017 3:18:34 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'WEB-INF/userCredWebDispatcher'
+stdout	(293)	Feb 13, 2017 3:18:34 PM	HTTPContextRegistry started: /userCred
+stderr	(305)	Feb 13, 2017 3:18:35 PM	Feb 13, 2017 3:18:35 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet '/WebContent'
+stdout	(305)	Feb 13, 2017 3:18:35 PM	HTTPContextRegistry started: /dbmgt
+stderr	(309)	Feb 13, 2017 3:18:35 PM	Feb 13, 2017 3:18:35 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet '/WebContent'
+stdout	(309)	Feb 13, 2017 3:18:35 PM	HTTPContextRegistry started: /dssharedutil
+stderr	(310)	Feb 13, 2017 3:18:35 PM	Feb 13, 2017 3:18:35 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'dashboardData-Dispatcher'
+stdout	(310)	Feb 13, 2017 3:18:35 PM	HTTPContextRegistry started: /singleDBData
+stderr	(312)	Feb 13, 2017 3:18:35 PM	Feb 13, 2017 3:18:35 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'cliDispatcher'
+stdout	(312)	Feb 13, 2017 3:18:35 PM	HTTPContextRegistry started: /wticli
+stderr	(313)	Feb 13, 2017 3:18:35 PM	Feb 13, 2017 3:18:35 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet '/WebContent'
+stdout	(313)	Feb 13, 2017 3:18:35 PM	HTTPContextRegistry started: /registry/intg
+stdout	(318)	Feb 13, 2017 3:18:36 PM	About > IBM Data Server Manager Version 2.1 Release 2.1.2.0, Build 20161122_1954 (C) Copyright IBM Corp. 2015, 2016
+stderr	(324)	Feb 13, 2017 3:18:36 PM	Feb 13, 2017 3:18:36 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'mainConfigDispatcher'
+stdout	(324)	Feb 13, 2017 3:18:36 PM	HTTPContextRegistry started: /mainConfig
+stderr	(325)	Feb 13, 2017 3:18:37 PM	Feb 13, 2017 3:18:37 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet '/WebContent'
+stdout	(325)	Feb 13, 2017 3:18:37 PM	HTTPContextRegistry started: /grp
+stderr	(328)	Feb 13, 2017 3:18:37 PM	Feb 13, 2017 3:18:37 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet '/WebContent'
+stdout	(328)	Feb 13, 2017 3:18:37 PM	HTTPContextRegistry started: /dswebservices
+stderr	(330)	Feb 13, 2017 3:18:37 PM	Feb 13, 2017 3:18:37 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'configDispatcher'
+stdout	(330)	Feb 13, 2017 3:18:37 PM	HTTPContextRegistry started: /config
+stderr	(331)	Feb 13, 2017 3:18:37 PM	Feb 13, 2017 3:18:37 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet '/WebContent'
+stdout	(331)	Feb 13, 2017 3:18:37 PM	HTTPContextRegistry started: /dbConnMgt
+stderr	(337)	Feb 13, 2017 3:18:39 PM	Feb 13, 2017 3:18:39 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'WEB-INF/jobMgrWebDispatcher'
+stdout	(335)	Feb 13, 2017 3:18:39 PM	/ibmblu/index_Customer.jsp ACTIVE
+stdout	(1)	Feb 13, 2017 3:18:39 PM	SERVER STATUS: ACTIVE
+stdout	(337)	Feb 13, 2017 3:18:40 PM	HTTPContextRegistry started: /jobmanager
+stderr	(340)	Feb 13, 2017 3:18:40 PM	Feb 13, 2017 3:18:40 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'WEB-INF/dbBlackoutWebDispatcher'
+stdout	(353)	Feb 13, 2017 3:18:40 PM	/ots/index.jsp ACTIVE
+stdout	(353)	Feb 13, 2017 3:18:40 PM	/dsmdev/dsmdev_index.jsp ACTIVE
+stdout	(340)	Feb 13, 2017 3:18:40 PM	HTTPContextRegistry started: /dbblackout
+stderr	(354)	Feb 13, 2017 3:18:40 PM	Feb 13, 2017 3:18:40 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'otsservices'
+stdout	(354)	Feb 13, 2017 3:18:40 PM	HTTPContextRegistry started: /otsservices
+stderr	(356)	Feb 13, 2017 3:18:40 PM	Feb 13, 2017 3:18:40 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'shsDispatcher'
+stderr	(344)	Feb 13, 2017 3:18:41 PM	Feb 13, 2017 3:18:41 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'blushiftservices'
+stdout	(356)	Feb 13, 2017 3:18:41 PM	HTTPContextRegistry started: /shs
+stdout	(344)	Feb 13, 2017 3:18:41 PM	HTTPContextRegistry started: /blushiftservices
+stderr	(342)	Feb 13, 2017 3:18:41 PM	Feb 13, 2017 3:18:41 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'bluhelixservices'
+stdout	(342)	Feb 13, 2017 3:18:41 PM	HTTPContextRegistry started: /bluhelixservices
+stderr	(345)	Feb 13, 2017 3:18:41 PM	Feb 13, 2017 3:18:41 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'WEB-INF/dashdb-api'
+stderr	(351)	Feb 13, 2017 3:18:41 PM	Feb 13, 2017 3:18:41 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'WEB-INF/idax'
+stdout	(345)	Feb 13, 2017 3:18:41 PM	HTTPContextRegistry started: /rest
+stdout	(355)	Feb 13, 2017 3:18:41 PM	SnapshotMgmtServiceImpl > disabled snapshot services=logMessage,pureScaleInstanceAlert
+stdout	(355)	Feb 13, 2017 3:18:41 PM	STARTED Health and Snapshot Contribution Management services
+stdout	(351)	Feb 13, 2017 3:18:41 PM	HTTPContextRegistry started: /analytics-services
+stderr	(364)	Feb 13, 2017 3:18:41 PM	Feb 13, 2017 3:18:41 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'WEB-INF/healthsnapshotWebDispatcher'
+stdout	(364)	Feb 13, 2017 3:18:41 PM	HTTPContextRegistry started: /healthsnapshot
+stderr	(365)	Feb 13, 2017 3:18:41 PM	Feb 13, 2017 3:18:41 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'WEB-INF/alertTypeWebDispatcher'
+stdout	(365)	Feb 13, 2017 3:18:41 PM	HTTPContextRegistry started: /alerttypeinfo
+stderr	(370)	Feb 13, 2017 3:18:41 PM	Feb 13, 2017 3:18:41 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'WEB-INF/customAlertWebDispatcher'
+stdout	(370)	Feb 13, 2017 3:18:41 PM	HTTPContextRegistry started: /customalerts
+stderr	(372)	Feb 13, 2017 3:18:41 PM	Feb 13, 2017 3:18:41 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'WEB-INF/alertMgmtWebDispatcher'
+stdout	(372)	Feb 13, 2017 3:18:41 PM	HTTPContextRegistry started: /alertsMgmt
+stderr	(373)	Feb 13, 2017 3:18:41 PM	Feb 13, 2017 3:18:41 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'WEB-INF/alertMgmtWebDispatcher'
+stdout	(373)	Feb 13, 2017 3:18:41 PM	HTTPContextRegistry started: /profileMgmt
+stderr	(375)	Feb 13, 2017 3:18:41 PM	Feb 13, 2017 3:18:41 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet 'alertsnotificationDispatcher'
+stdout	(375)	Feb 13, 2017 3:18:41 PM	HTTPContextRegistry started: /alertsnotification
+stderr	(386)	Feb 13, 2017 3:18:48 PM	Feb 13, 2017 3:18:48 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet '/WebContent'
+stdout	(386)	Feb 13, 2017 3:18:48 PM	HTTPContextRegistry started: /basichealthweb
+stderr	(388)	Feb 13, 2017 3:18:50 PM	Feb 13, 2017 3:18:50 PM com.ibm.ws.webcontainer.webapp.WebApp log
+INFO: SRVE0292I: Servlet Message - [dsweb]:.Initializing Spring FrameworkServlet '/WebContent'
+stdout	(388)	Feb 13, 2017 3:18:50 PM	HTTPContextRegistry started: /basichealthwebdb2z

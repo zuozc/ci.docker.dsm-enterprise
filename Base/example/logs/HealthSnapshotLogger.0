@@ -1,0 +1,4 @@
+HealthSnapshotLogger	(355)	Feb 13, 2017 3:18:41 PM	INFO    SnapshotMgtServiceImpl: setupSchedule. Returning without setup.
+HealthSnapshotLogger	(361)	Feb 13, 2017 8:59:52 AM	INFO    SnapshotMgtServiceImpl: setupSchedule. Returning without setup.
+HealthSnapshotLogger	(325)	Feb 13, 2017 9:00:39 AM	INFO    SnapshotMgtServiceImpl: setupSchedule. Returning without setup.
+HealthSnapshotLogger	(366)	Feb 13, 2017 9:05:40 AM	INFO    PrunerTaskScheduler run Scheduled com.ibm.datatools.dsweb.ots.alerts.extn.stmtStore.StmtStorePrunerTask to run everyday at Tue Feb 14 02:00:00 UTC 2017

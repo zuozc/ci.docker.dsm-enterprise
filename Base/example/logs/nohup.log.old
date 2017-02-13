@@ -1,0 +1,23 @@
+/home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/Config/dswebserver.properties
+-Xms
+UPDATED: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/Config/dswebserver.properties
+-Xmx
+UPDATED: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/Config/dswebserver.properties
+-SERVER_JAVA_OPTS
+UPDATED: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/Config/dswebserver.properties
+checking port availability: 11082
+port available: 11082
+checking port availability: 11080
+port available: 11080
+checking port availability: 11081
+port available: 11081
+
+STARTING: http://localhost:11080/console
+
+dsserver_home: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr
+port: 11080
+https.port: 11081
+status.port: 11082
+logs/dsserver.0.log: /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/logs/dsserver.0.log
+Process ID: 19517
+SERVER current state: ACTIVE

@@ -1,0 +1,31 @@
+Autonomics	(102)	Feb 13, 2017 3:16:52 PM	INFO    AutonomicsRTSrv::initSelf: Waiting for AutonomicsRTBean to start
+Autonomics	(102)	Feb 13, 2017 3:17:53 PM	INFO    AutonomicsRTSrv::initSelf: Waiting for AutonomicsRTBean to start
+Autonomics	(302)	Feb 13, 2017 3:18:35 PM	INFO    
+
+
+###############################################################################
+#####   AutonomicsRTBean::initAutonomicsRTBean: Autonomics RT starting    #####
+###############################################################################
+
+
+Autonomics	(109)	Feb 13, 2017 8:58:43 AM	INFO    AutonomicsRTSrv::initSelf: Waiting for AutonomicsRTBean to start
+Autonomics	(109)	Feb 13, 2017 8:59:44 AM	INFO    AutonomicsRTSrv::initSelf: Waiting for AutonomicsRTBean to start
+Autonomics	(325)	Feb 13, 2017 8:59:46 AM	INFO    
+
+
+###############################################################################
+#####   AutonomicsRTBean::initAutonomicsRTBean: Autonomics RT starting    #####
+###############################################################################
+
+
+Autonomics	(129)	Feb 13, 2017 9:00:02 AM	INFO    AutonomicsRTBean::destroyAutonomicsRTBean: 
+Autonomics	(129)	Feb 13, 2017 9:00:02 AM	INFO    AutoRTEngine::shutdown: 
+Autonomics	(103)	Feb 13, 2017 9:00:36 AM	INFO    AutonomicsRTSrv::initSelf: Waiting for AutonomicsRTBean to start
+Autonomics	(283)	Feb 13, 2017 9:00:38 AM	INFO    
+
+
+###############################################################################
+#####   AutonomicsRTBean::initAutonomicsRTBean: Autonomics RT starting    #####
+###############################################################################
+
+

@@ -1,0 +1,67 @@
+OTSMonlite	(299)	Feb 13, 2017 3:18:35 PM	INFO    
+
+
+###############################################################################
+#####  Monlite OtsMonliteBean::initOtsMonliteBean: OTS Monlite starting   #####
+###############################################################################
+
+
+OTSMonlite	(299)	Feb 13, 2017 3:18:35 PM	INFO    Monlite OtsMonliteBean::initMonitoring:  Waiting for instance of RtmonEngine
+OTSMonlite	(299)	Feb 13, 2017 3:18:35 PM	INFO    Monlite OtsMonliteBean::initMonitoring:  Got instance of RtmonEngine
+OTSMonlite	(299)	Feb 13, 2017 3:18:35 PM	INFO    Monlite OtsMonliteBean::initMonitoring:  Creating instance of SqlcapEngine
+OTSMonlite	(299)	Feb 13, 2017 3:18:35 PM	INFO    Monlite OtsMonliteBean::initMonitoring:  Created instance of SqlcapEngine
+OTSMonlite	(299)	Feb 13, 2017 3:18:35 PM	INFO    Monlite OtsMonliteBean::initMonitoring:  Waiting for instance of AutoRTEngine
+OTSMonlite	(299)	Feb 13, 2017 3:18:40 PM	INFO    Monlite OtsMonliteBean::initMonitoring:  Got instance of AutoRTEngine
+OTSMonlite	(352)	Feb 13, 2017 3:18:40 PM	INFO    Monlite MonliteConfigThread::initOneTime:  Waiting for instance of ConnectionsService
+OTSMonlite	(352)	Feb 13, 2017 3:18:40 PM	INFO    Monlite MonliteConfigThread::initOneTime:  Got instance of ConnectionsService
+OTSMonlite	(352)	Feb 13, 2017 3:18:40 PM	INFO    Monlite MonliteConfigThread::initOneTime:  Waiting for instance of MonProfileHelper
+OTSMonlite	(311)	Feb 13, 2017 3:18:40 PM	INFO    Sqlcap SqlcapEngine::run:  starting
+OTSMonlite	(352)	Feb 13, 2017 3:18:45 PM	INFO    Monlite MonliteConfigThread::initOneTime:  Got instance of MonProfileHelper
+OTSMonlite	(352)	Feb 13, 2017 3:18:45 PM	INFO    Monlite MonliteConfigThread::initOneTime:  Waiting for instance of ServicesHelper
+OTSMonlite	(352)	Feb 13, 2017 3:18:45 PM	INFO    Monlite MonliteConfigThread::initOneTime:  Got instance of ServicesHelper
+OTSMonlite	(323)	Feb 13, 2017 8:59:46 AM	INFO    
+
+
+###############################################################################
+#####  Monlite OtsMonliteBean::initOtsMonliteBean: OTS Monlite starting   #####
+###############################################################################
+
+
+OTSMonlite	(323)	Feb 13, 2017 8:59:46 AM	INFO    Monlite OtsMonliteBean::initMonitoring:  Waiting for instance of RtmonEngine
+OTSMonlite	(323)	Feb 13, 2017 8:59:46 AM	INFO    Monlite OtsMonliteBean::initMonitoring:  Got instance of RtmonEngine
+OTSMonlite	(323)	Feb 13, 2017 8:59:46 AM	INFO    Monlite OtsMonliteBean::initMonitoring:  Creating instance of SqlcapEngine
+OTSMonlite	(323)	Feb 13, 2017 8:59:46 AM	INFO    Monlite OtsMonliteBean::initMonitoring:  Created instance of SqlcapEngine
+OTSMonlite	(323)	Feb 13, 2017 8:59:46 AM	INFO    Monlite OtsMonliteBean::initMonitoring:  Waiting for instance of AutoRTEngine
+OTSMonlite	(323)	Feb 13, 2017 8:59:51 AM	INFO    Monlite OtsMonliteBean::initMonitoring:  Got instance of AutoRTEngine
+OTSMonlite	(364)	Feb 13, 2017 8:59:52 AM	INFO    Monlite MonliteConfigThread::initOneTime:  Waiting for instance of ConnectionsService
+OTSMonlite	(364)	Feb 13, 2017 8:59:52 AM	INFO    Monlite MonliteConfigThread::initOneTime:  Got instance of ConnectionsService
+OTSMonlite	(364)	Feb 13, 2017 8:59:52 AM	INFO    Monlite MonliteConfigThread::initOneTime:  Waiting for instance of MonProfileHelper
+OTSMonlite	(335)	Feb 13, 2017 8:59:52 AM	INFO    Sqlcap SqlcapEngine::run:  starting
+OTSMonlite	(364)	Feb 13, 2017 8:59:57 AM	INFO    Monlite MonliteConfigThread::initOneTime:  Got instance of MonProfileHelper
+OTSMonlite	(364)	Feb 13, 2017 8:59:57 AM	INFO    Monlite MonliteConfigThread::initOneTime:  Waiting for instance of ServicesHelper
+OTSMonlite	(364)	Feb 13, 2017 8:59:57 AM	INFO    Monlite MonliteConfigThread::initOneTime:  Got instance of ServicesHelper
+OTSMonlite	(129)	Feb 13, 2017 9:00:02 AM	INFO    Monlite OtsMonliteBean::destroyOtsMonliteBean: 
+OTSMonlite	(129)	Feb 13, 2017 9:00:02 AM	INFO    Monlite MonliteConfigThread::shutdown: 
+OTSMonlite	(129)	Feb 13, 2017 9:00:02 AM	INFO    Sqlcap SqlcapEngine::shutdown: shutting down
+OTSMonlite	(335)	Feb 13, 2017 9:00:02 AM	INFO    Sqlcap SqlcapEngine::run:  shutting down
+OTSMonlite	(292)	Feb 13, 2017 9:00:38 AM	INFO    
+
+
+###############################################################################
+#####  Monlite OtsMonliteBean::initOtsMonliteBean: OTS Monlite starting   #####
+###############################################################################
+
+
+OTSMonlite	(292)	Feb 13, 2017 9:00:38 AM	INFO    Monlite OtsMonliteBean::initMonitoring:  Waiting for instance of RtmonEngine
+OTSMonlite	(292)	Feb 13, 2017 9:00:38 AM	INFO    Monlite OtsMonliteBean::initMonitoring:  Got instance of RtmonEngine
+OTSMonlite	(292)	Feb 13, 2017 9:00:38 AM	INFO    Monlite OtsMonliteBean::initMonitoring:  Creating instance of SqlcapEngine
+OTSMonlite	(292)	Feb 13, 2017 9:00:38 AM	INFO    Monlite OtsMonliteBean::initMonitoring:  Created instance of SqlcapEngine
+OTSMonlite	(292)	Feb 13, 2017 9:00:38 AM	INFO    Monlite OtsMonliteBean::initMonitoring:  Waiting for instance of AutoRTEngine
+OTSMonlite	(292)	Feb 13, 2017 9:00:43 AM	INFO    Monlite OtsMonliteBean::initMonitoring:  Got instance of AutoRTEngine
+OTSMonlite	(374)	Feb 13, 2017 9:00:43 AM	INFO    Monlite MonliteConfigThread::initOneTime:  Waiting for instance of ConnectionsService
+OTSMonlite	(374)	Feb 13, 2017 9:00:43 AM	INFO    Monlite MonliteConfigThread::initOneTime:  Got instance of ConnectionsService
+OTSMonlite	(374)	Feb 13, 2017 9:00:43 AM	INFO    Monlite MonliteConfigThread::initOneTime:  Waiting for instance of MonProfileHelper
+OTSMonlite	(304)	Feb 13, 2017 9:00:43 AM	INFO    Sqlcap SqlcapEngine::run:  starting
+OTSMonlite	(374)	Feb 13, 2017 9:00:43 AM	INFO    Monlite MonliteConfigThread::initOneTime:  Got instance of MonProfileHelper
+OTSMonlite	(374)	Feb 13, 2017 9:00:43 AM	INFO    Monlite MonliteConfigThread::initOneTime:  Waiting for instance of ServicesHelper
+OTSMonlite	(374)	Feb 13, 2017 9:00:43 AM	INFO    Monlite MonliteConfigThread::initOneTime:  Got instance of ServicesHelper

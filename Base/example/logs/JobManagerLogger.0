@@ -1,0 +1,6 @@
+JobManagerLogger	(365)	Feb 13, 2017 9:00:02 AM	ERROR    Exception in sleep() of run() of JobCleaner
+java.lang.InterruptedException
+	at java.lang.Thread.sleep(Native Method)
+	at java.lang.Thread.sleep(Thread.java:909)
+	at com.ibm.datatools.jobmanager.JobCleaner.run(JobCleaner.java:33)
+

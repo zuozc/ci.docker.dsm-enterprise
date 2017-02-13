@@ -1,0 +1,72 @@
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    New com.ibm.analytics.idax.spark.clues.repository.ClusterController instantiated.
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	WARNING    No config file found, using default settings
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    IDAX REST: system properties read, new properties are: {}
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    IP address string: 127.0.0.1
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    Configuring worker with IP 127.0.0.1
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    SystemCluster initialized.
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    Resource constraint: sparkExecutorCores=4
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    Resource constraint: sparkCoresMax=4
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    Constraining maxParallelApps and sparkExecutorMemory
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    Initial values: maxParallelApps = 5, allowedSparkExecutorMemory = 320
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    New values: maxParallelApps = 3, allowedSparkExecutorMemory = 533
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    Resource constraint: sparkExecutorMemory=533
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    Resource constraint: maxParallelApps=3
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    Resource constraint: sparkWorkerCores=12
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    Resource constraint: sparkWorkerMemory=1600
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    Resource constraint: port range for clusters 25000-25049, for apps 25050-25999
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    IDAX REST: cluster controller initialized, init status is: true
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    IDAX REST: dispatcher initialized, init status is: true
+AnalyticsLogger	(346)	Feb 13, 2017 3:18:39 PM	INFO    Setting log files: StdOut: null, StdErr: null
+AnalyticsLogger	(347)	Feb 13, 2017 3:18:39 PM	INFO    Executing command: sudo /opt/ibm/dashdb_spark/bin/ida_clues_spark_manager -e "SPARK_WORKER_BASEDIR=/tmp/spark/work" killall
+AnalyticsLogger	(347)	Feb 13, 2017 3:18:39 PM	INFO    KillAll started.
+AnalyticsLogger	(347)	Feb 13, 2017 3:18:39 PM	INFO    KillAll ended with exit value 1 (PID null).
+AnalyticsLogger	(346)	Feb 13, 2017 3:18:39 PM	INFO    TaskWaiterResult [resultMap={}, taskSuceeded=true, taskStatusMsg=]
+AnalyticsLogger	(343)	Feb 13, 2017 3:18:39 PM	INFO    Kill task successful (IP 127.0.0.1, PID )
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    New com.ibm.analytics.idax.spark.clues.repository.ClusterController instantiated.
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	WARNING    No config file found, using default settings
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    IDAX REST: system properties read, new properties are: {}
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    IP address string: 127.0.0.1
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    Configuring worker with IP 127.0.0.1
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    SystemCluster initialized.
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    Resource constraint: sparkExecutorCores=4
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    Resource constraint: sparkCoresMax=4
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    Constraining maxParallelApps and sparkExecutorMemory
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    Initial values: maxParallelApps = 5, allowedSparkExecutorMemory = 320
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    New values: maxParallelApps = 3, allowedSparkExecutorMemory = 533
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    Resource constraint: sparkExecutorMemory=533
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    Resource constraint: maxParallelApps=3
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    Resource constraint: sparkWorkerCores=12
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    Resource constraint: sparkWorkerMemory=1600
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    Resource constraint: port range for clusters 25000-25049, for apps 25050-25999
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    IDAX REST: cluster controller initialized, init status is: true
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    IDAX REST: dispatcher initialized, init status is: true
+AnalyticsLogger	(377)	Feb 13, 2017 8:59:52 AM	INFO    Setting log files: StdOut: null, StdErr: null
+AnalyticsLogger	(378)	Feb 13, 2017 8:59:52 AM	INFO    Executing command: sudo /opt/ibm/dashdb_spark/bin/ida_clues_spark_manager -e "SPARK_WORKER_BASEDIR=/tmp/spark/work" killall
+AnalyticsLogger	(378)	Feb 13, 2017 8:59:52 AM	INFO    KillAll aborted with exit value 1 (PID null).
+AnalyticsLogger	(378)	Feb 13, 2017 8:59:52 AM	ERROR    Cannot run program "sudo": error=2, No such file or directory
+AnalyticsLogger	(377)	Feb 13, 2017 8:59:52 AM	INFO    TaskWaiterResult [resultMap={}, taskSuceeded=false, taskStatusMsg=Cannot run program "sudo": error=2, No such file or directory]
+AnalyticsLogger	(375)	Feb 13, 2017 8:59:52 AM	INFO    Kill task not successful(IP 127.0.0.1, PID )
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    New com.ibm.analytics.idax.spark.clues.repository.ClusterController instantiated.
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	WARNING    No config file found, using default settings
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    IDAX REST: system properties read, new properties are: {}
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    IP address string: 127.0.0.1
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    Configuring worker with IP 127.0.0.1
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    SystemCluster initialized.
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    Resource constraint: sparkExecutorCores=4
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    Resource constraint: sparkCoresMax=4
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    Constraining maxParallelApps and sparkExecutorMemory
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    Initial values: maxParallelApps = 5, allowedSparkExecutorMemory = 320
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    New values: maxParallelApps = 3, allowedSparkExecutorMemory = 533
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    Resource constraint: sparkExecutorMemory=533
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    Resource constraint: maxParallelApps=3
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    Resource constraint: sparkWorkerCores=12
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    Resource constraint: sparkWorkerMemory=1600
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    Resource constraint: port range for clusters 25000-25049, for apps 25050-25999
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    IDAX REST: cluster controller initialized, init status is: true
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    IDAX REST: dispatcher initialized, init status is: true
+AnalyticsLogger	(355)	Feb 13, 2017 9:00:39 AM	INFO    Setting log files: StdOut: null, StdErr: null
+AnalyticsLogger	(356)	Feb 13, 2017 9:00:39 AM	INFO    Executing command: sudo /opt/ibm/dashdb_spark/bin/ida_clues_spark_manager -e "SPARK_WORKER_BASEDIR=/tmp/spark/work" killall
+AnalyticsLogger	(356)	Feb 13, 2017 9:00:39 AM	INFO    KillAll aborted with exit value 1 (PID null).
+AnalyticsLogger	(356)	Feb 13, 2017 9:00:39 AM	ERROR    Cannot run program "sudo": error=2, No such file or directory
+AnalyticsLogger	(355)	Feb 13, 2017 9:00:39 AM	INFO    TaskWaiterResult [resultMap={}, taskSuceeded=false, taskStatusMsg=Cannot run program "sudo": error=2, No such file or directory]
+AnalyticsLogger	(345)	Feb 13, 2017 9:00:39 AM	INFO    Kill task not successful(IP 127.0.0.1, PID )

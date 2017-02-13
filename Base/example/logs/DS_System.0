@@ -1,0 +1,406 @@
+DS_System	(192)	Feb 13, 2017 3:16:52 PM	INFO    DS_System Logger initialized: 
+
+Component Name                    : DS_System
+Sub Component Name                : 
+Sub Component Prefix              : SYS-LOG
+Log Prefix                        : 
+Init Level                        : 6
+Log FileName                      : DS_System
+(Deduced Absolute Path)           : /home/mochi/ci.docker.dsm-enterprise/Base/ibm-datasrvrmgr/DS_System
+Log Format                        : TEXT
+File Handler                      : true
+File Append                       : true
+Console Handler                   : false
+Rolling Files                     : true
+Max File Size In MB(1 - 20) : 10
+Max Editions(1 - 15)        : 4
+
+DS_System	(243)	Feb 13, 2017 3:18:31 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.common.processmgmt; directory=repository; file=create_processmgmt.sql
+DS_System	(244)	Feb 13, 2017 3:18:31 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.core.preferences; directory=repository; file=create.sql
+DS_System	(243)	Feb 13, 2017 3:18:31 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.common.processmgmt; directory=repository; file=create_processmgmt.sql
+DS_System	(244)	Feb 13, 2017 3:18:31 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.core.preferences; directory=repository; file=create.sql
+DS_System	(238)	Feb 13, 2017 3:18:31 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.adm.core.instance; directory=repository; file=create.sql
+DS_System	(238)	Feb 13, 2017 3:18:31 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.adm.core.instance; directory=repository; file=create.sql
+DS_System	(240)	Feb 13, 2017 3:18:32 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.adm.core.editor; directory=repository; file=create.sql
+DS_System	(240)	Feb 13, 2017 3:18:32 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.adm.core.editor; directory=repository; file=create.sql
+DS_System	(246)	Feb 13, 2017 3:18:34 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.services.scheduler; directory=repository; file=table_create.sql
+DS_System	(246)	Feb 13, 2017 3:18:34 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.services.scheduler; directory=repository; file=table_create.sql
+DS_System	(245)	Feb 13, 2017 3:18:34 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.user.auth.privileges; directory=repository; file=create.sql
+DS_System	(245)	Feb 13, 2017 3:18:34 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.user.auth.privileges; directory=repository; file=create.sql
+DS_System	(289)	Feb 13, 2017 3:18:34 PM	INFO    OAuth2ExtURLAccessHandler initialized
+DS_System	(286)	Feb 13, 2017 3:18:35 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.common.dbmgt.service; directory=repository; file=create.sql
+DS_System	(286)	Feb 13, 2017 3:18:35 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.common.dbmgt.service; directory=repository; file=create.sql
+DS_System	(296)	Feb 13, 2017 3:18:35 PM	INFO    DBResourceManagerImpl: Initialization start...
+DS_System	(299)	Feb 13, 2017 3:18:35 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.dsweb.ots.monlite; directory=repository; file=create.sql
+DS_System	(299)	Feb 13, 2017 3:18:35 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.dsweb.ots.monlite; directory=repository; file=create.sql
+DS_System	(296)	Feb 13, 2017 3:18:35 PM	INFO    DBResourceManagerImpl: Checking for core schema presence...
+DS_System	(303)	Feb 13, 2017 3:18:35 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.dsweb.registry.intg; directory=repository; file=create.sql
+DS_System	(303)	Feb 13, 2017 3:18:35 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.dsweb.registry.intg; directory=repository; file=create.sql
+DS_System	(296)	Feb 13, 2017 3:18:35 PM	INFO    DBResourceManagerImpl: Core schema does not exist. Creating...
+DS_System	(297)	Feb 13, 2017 3:18:36 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.dsweb.ots.connections; directory=repository; file=create.sql
+DS_System	(297)	Feb 13, 2017 3:18:36 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.dsweb.ots.connections; directory=repository; file=create.sql
+DS_System	(297)	Feb 13, 2017 3:18:36 PM	ERROR    ConnectionsService.init: unable to get start BluhelixMetricsCollectionThread
+java.lang.IllegalThreadStateException: Thread is already started
+	at java.lang.Thread.start(Thread.java:943)
+	at com.ibm.datatools.dsweb.ots.connections.ConnectionsService.init(ConnectionsService.java:256)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:473)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(AccessController.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:729)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.completeRefresh(AbstractDelegatedExecutionApplicationContext.java:276)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor$CompleteRefreshTask.run(DependencyWaiterApplicationContextExecutor.java:145)
+	at java.lang.Thread.run(Thread.java:785)
+
+DS_System	(318)	Feb 13, 2017 3:18:36 PM	INFO    About > IBM Data Server Manager Version 2.1 Release 2.1.2.0, Build 20161122_1954 (C) Copyright IBM Corp. 2015, 2016
+DS_System	(319)	Feb 13, 2017 3:18:36 PM	ERROR    Utilities.execute: exception executing SQL select filters from ibmpdq.groups fetch first 1 rows only
+java.sql.SQLSyntaxErrorException: Table/View 'IBMPDQ.GROUPS' does not exist.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement20.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement30.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement40.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement42.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver42.newEmbedPreparedStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:185)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:278)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:185)
+	at com.ibm.datatools.common.db.connmgt.impl.ConnectionWrapper.prepareStatement(ConnectionWrapper.java:376)
+	at com.ibm.datatools.dsweb.ots.connections.common.Utilities._execute(Utilities.java:271)
+	at com.ibm.datatools.dsweb.ots.connections.common.Utilities.execute(Utilities.java:232)
+	at com.ibm.datatools.dsweb.ots.connections.cache.group.GroupMigrationThread.checkExistenceFILTERSColumn(GroupMigrationThread.java:124)
+	at com.ibm.datatools.dsweb.ots.connections.cache.group.GroupMigrationThread.run(GroupMigrationThread.java:32)
+Caused by: java.sql.SQLException: Table/View 'IBMPDQ.GROUPS' does not exist.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 22 more
+Caused by: ERROR 42X05: Table/View 'IBMPDQ.GROUPS' does not exist.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
+	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
+	at org.apache.derby.impl.sql.compile.SelectNode.bindNonVTITables(Unknown Source)
+	at org.apache.derby.impl.sql.compile.DMLStatementNode.bindTables(Unknown Source)
+	at org.apache.derby.impl.sql.compile.DMLStatementNode.bind(Unknown Source)
+	at org.apache.derby.impl.sql.compile.CursorNode.bindStatement(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepare(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
+	... 16 more
+
+DS_System	(296)	Feb 13, 2017 3:18:36 PM	INFO    --------- DBResourceManagerImpl: Create core schema successfully --------
+DS_System	(296)	Feb 13, 2017 3:18:36 PM	INFO    DBResourceManagerImpl: Initialization complete...
+DS_System	(300)	Feb 13, 2017 3:18:37 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.common.grp.repository; directory=repository; file=create.sql
+DS_System	(300)	Feb 13, 2017 3:18:37 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.common.grp.repository; directory=repository; file=create.sql
+DS_System	(301)	Feb 13, 2017 3:18:37 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.datastudio.web; directory=repository; file=create.sql
+DS_System	(301)	Feb 13, 2017 3:18:37 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.datastudio.web; directory=repository; file=create.sql
+DS_System	(307)	Feb 13, 2017 3:18:37 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.db.connmgt.web; directory=repository; file=create.sql
+DS_System	(307)	Feb 13, 2017 3:18:37 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.db.connmgt.web; directory=repository; file=create.sql
+DS_System	(327)	Feb 13, 2017 3:18:39 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.jobmanager; directory=repository; file=create.sql
+DS_System	(327)	Feb 13, 2017 3:18:39 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.jobmanager; directory=repository; file=create.sql
+DS_System	(335)	Feb 13, 2017 3:18:39 PM	INFO    issSOEnabled: false
+DS_System	(335)	Feb 13, 2017 3:18:39 PM	INFO    domain=ng.bluemix.net
+DS_System	(335)	Feb 13, 2017 3:18:39 PM	INFO    dashdbrm_url=https://dashdbrm.ng.bluemix.net
+DS_System	(335)	Feb 13, 2017 3:18:39 PM	INFO    bluemix_mccp_url=https://mccp.ng.bluemix.net
+DS_System	(335)	Feb 13, 2017 3:18:39 PM	INFO    coreMetricsTag=disabled
+DS_System	(334)	Feb 13, 2017 3:18:39 PM	INFO    issSOEnabled: false
+DS_System	(334)	Feb 13, 2017 3:18:39 PM	INFO    domain=ng.bluemix.net
+DS_System	(334)	Feb 13, 2017 3:18:39 PM	INFO    dashdbrm_url=https://dashdbrm.ng.bluemix.net
+DS_System	(334)	Feb 13, 2017 3:18:39 PM	INFO    bluemix_mccp_url=https://mccp.ng.bluemix.net
+DS_System	(334)	Feb 13, 2017 3:18:39 PM	INFO    coreMetricsTag=disabled
+DS_System	(326)	Feb 13, 2017 3:18:40 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.health; directory=repository; file=create.sql
+DS_System	(326)	Feb 13, 2017 3:18:40 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.health; directory=repository; file=create.sql
+DS_System	(326)	Feb 13, 2017 3:18:40 PM	INFO    CDIHS0502I:  The Health Summary repository started successfully.
+DS_System	(326)	Feb 13, 2017 3:18:40 PM	INFO    features: {EnableMetrics=false}
+DS_System	(326)	Feb 13, 2017 3:18:40 PM	INFO    CDIHS0500I:  The Health Summary started successfully.
+DS_System	(355)	Feb 13, 2017 3:18:41 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.health.extn; directory=repository; file=create.sql
+DS_System	(355)	Feb 13, 2017 3:18:41 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.health.extn; directory=repository; file=create.sql
+DS_System	(361)	Feb 13, 2017 3:18:41 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.alerts.management; directory=repository; file=create.sql
+DS_System	(361)	Feb 13, 2017 3:18:41 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.alerts.management; directory=repository; file=create.sql
+DS_System	(359)	Feb 13, 2017 3:18:41 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.shs.alerts.notification; directory=repository; file=create.sql
+DS_System	(359)	Feb 13, 2017 3:18:41 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.shs.alerts.notification; directory=repository; file=create.sql
+DS_System	(357)	Feb 13, 2017 3:18:45 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.healthsnapshot.core; directory=repository; file=create.sql
+DS_System	(357)	Feb 13, 2017 3:18:45 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.healthsnapshot.core; directory=repository; file=create.sql
+DS_System	(377)	Feb 13, 2017 3:18:45 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.basichealth; directory=repositoryV2; file=create.sql
+DS_System	(377)	Feb 13, 2017 3:18:45 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.basichealth; directory=repositoryV2; file=create.sql
+DS_System	(376)	Feb 13, 2017 3:18:48 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.dsweb.ots.alerts.extn; directory=repository; file=create.sql
+DS_System	(376)	Feb 13, 2017 3:18:48 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.dsweb.ots.alerts.extn; directory=repository; file=create.sql
+DS_System	(378)	Feb 13, 2017 3:18:49 PM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.basichealth.db2z; directory=repository; file=create.sql
+DS_System	(378)	Feb 13, 2017 3:18:49 PM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.basichealth.db2z; directory=repository; file=create.sql
+DS_System	(316)	Feb 13, 2017 3:19:06 PM	INFO    com.ibm.datatools.dsweb.ots.connections.thread.TestRepoThread.run: {"isActive":true}
+DS_System	(200)	Feb 13, 2017 8:58:43 AM	INFO    DS_System Logger initialized: 
+
+Component Name                    : DS_System
+Sub Component Name                : 
+Sub Component Prefix              : SYS-LOG
+Log Prefix                        : 
+Init Level                        : 6
+Log FileName                      : DS_System
+(Deduced Absolute Path)           : /opt/ibm-datasrvrmgr/DS_System
+Log Format                        : TEXT
+File Handler                      : true
+File Append                       : true
+Console Handler                   : false
+Rolling Files                     : true
+Max File Size In MB(1 - 20) : 10
+Max Editions(1 - 15)        : 4
+
+DS_System	(264)	Feb 13, 2017 8:59:42 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.common.processmgmt; directory=repository; file=create_processmgmt.sql
+DS_System	(264)	Feb 13, 2017 8:59:42 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.common.processmgmt; directory=repository; file=create_processmgmt.sql
+DS_System	(259)	Feb 13, 2017 8:59:42 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.core.preferences; directory=repository; file=create.sql
+DS_System	(259)	Feb 13, 2017 8:59:42 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.core.preferences; directory=repository; file=create.sql
+DS_System	(262)	Feb 13, 2017 8:59:42 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.adm.core.editor; directory=repository; file=create.sql
+DS_System	(262)	Feb 13, 2017 8:59:42 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.adm.core.editor; directory=repository; file=create.sql
+DS_System	(260)	Feb 13, 2017 8:59:45 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.services.scheduler; directory=repository; file=table_create.sql
+DS_System	(260)	Feb 13, 2017 8:59:45 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.services.scheduler; directory=repository; file=table_create.sql
+DS_System	(267)	Feb 13, 2017 8:59:45 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.adm.core.instance; directory=repository; file=create.sql
+DS_System	(267)	Feb 13, 2017 8:59:45 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.adm.core.instance; directory=repository; file=create.sql
+DS_System	(265)	Feb 13, 2017 8:59:45 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.user.auth.privileges; directory=repository; file=create.sql
+DS_System	(265)	Feb 13, 2017 8:59:45 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.user.auth.privileges; directory=repository; file=create.sql
+DS_System	(313)	Feb 13, 2017 8:59:45 AM	INFO    OAuth2ExtURLAccessHandler initialized
+DS_System	(310)	Feb 13, 2017 8:59:46 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.common.dbmgt.service; directory=repository; file=create.sql
+DS_System	(310)	Feb 13, 2017 8:59:46 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.common.dbmgt.service; directory=repository; file=create.sql
+DS_System	(323)	Feb 13, 2017 8:59:46 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.dsweb.ots.monlite; directory=repository; file=create.sql
+DS_System	(323)	Feb 13, 2017 8:59:46 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.dsweb.ots.monlite; directory=repository; file=create.sql
+DS_System	(324)	Feb 13, 2017 8:59:46 AM	INFO    DBResourceManagerImpl: Initialization start...
+DS_System	(324)	Feb 13, 2017 8:59:46 AM	INFO    DBResourceManagerImpl: Checking for core schema presence...
+DS_System	(329)	Feb 13, 2017 8:59:47 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.dsweb.registry.intg; directory=repository; file=create.sql
+DS_System	(328)	Feb 13, 2017 8:59:47 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.datastudio.web; directory=repository; file=create.sql
+DS_System	(329)	Feb 13, 2017 8:59:47 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.dsweb.registry.intg; directory=repository; file=create.sql
+DS_System	(328)	Feb 13, 2017 8:59:47 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.datastudio.web; directory=repository; file=create.sql
+DS_System	(324)	Feb 13, 2017 8:59:47 AM	INFO    DBResourceManagerImpl: Core schema does not exist. Creating...
+DS_System	(321)	Feb 13, 2017 8:59:47 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.dsweb.ots.connections; directory=repository; file=create.sql
+DS_System	(321)	Feb 13, 2017 8:59:47 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.dsweb.ots.connections; directory=repository; file=create.sql
+DS_System	(321)	Feb 13, 2017 8:59:47 AM	ERROR    ConnectionsService.init: unable to get start BluhelixMetricsCollectionThread
+java.lang.IllegalThreadStateException: Thread is already started
+	at java.lang.Thread.start(Thread.java:943)
+	at com.ibm.datatools.dsweb.ots.connections.ConnectionsService.init(ConnectionsService.java:256)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:473)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(AccessController.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:729)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.completeRefresh(AbstractDelegatedExecutionApplicationContext.java:276)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor$CompleteRefreshTask.run(DependencyWaiterApplicationContextExecutor.java:145)
+	at java.lang.Thread.run(Thread.java:785)
+
+DS_System	(345)	Feb 13, 2017 8:59:47 AM	ERROR    Utilities.execute: exception executing SQL select filters from ibmpdq.groups fetch first 1 rows only
+java.sql.SQLSyntaxErrorException: Table/View 'IBMPDQ.GROUPS' does not exist.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement20.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement30.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement40.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement42.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver42.newEmbedPreparedStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:185)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:278)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:185)
+	at com.ibm.datatools.common.db.connmgt.impl.ConnectionWrapper.prepareStatement(ConnectionWrapper.java:376)
+	at com.ibm.datatools.dsweb.ots.connections.common.Utilities._execute(Utilities.java:271)
+	at com.ibm.datatools.dsweb.ots.connections.common.Utilities.execute(Utilities.java:232)
+	at com.ibm.datatools.dsweb.ots.connections.cache.group.GroupMigrationThread.checkExistenceFILTERSColumn(GroupMigrationThread.java:124)
+	at com.ibm.datatools.dsweb.ots.connections.cache.group.GroupMigrationThread.run(GroupMigrationThread.java:32)
+Caused by: java.sql.SQLException: Table/View 'IBMPDQ.GROUPS' does not exist.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 22 more
+Caused by: ERROR 42X05: Table/View 'IBMPDQ.GROUPS' does not exist.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
+	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
+	at org.apache.derby.impl.sql.compile.SelectNode.bindNonVTITables(Unknown Source)
+	at org.apache.derby.impl.sql.compile.DMLStatementNode.bindTables(Unknown Source)
+	at org.apache.derby.impl.sql.compile.DMLStatementNode.bind(Unknown Source)
+	at org.apache.derby.impl.sql.compile.CursorNode.bindStatement(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepare(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
+	... 16 more
+
+DS_System	(344)	Feb 13, 2017 8:59:47 AM	INFO    About > IBM Data Server Manager Version 2.1 Release 2.1.2.0, Build 20161122_1954 (C) Copyright IBM Corp. 2015, 2016
+DS_System	(322)	Feb 13, 2017 8:59:48 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.common.grp.repository; directory=repository; file=create.sql
+DS_System	(322)	Feb 13, 2017 8:59:48 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.common.grp.repository; directory=repository; file=create.sql
+DS_System	(324)	Feb 13, 2017 8:59:48 AM	INFO    --------- DBResourceManagerImpl: Create core schema successfully --------
+DS_System	(324)	Feb 13, 2017 8:59:48 AM	INFO    DBResourceManagerImpl: Initialization complete...
+DS_System	(332)	Feb 13, 2017 8:59:48 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.db.connmgt.web; directory=repository; file=create.sql
+DS_System	(332)	Feb 13, 2017 8:59:48 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.db.connmgt.web; directory=repository; file=create.sql
+DS_System	(353)	Feb 13, 2017 8:59:50 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.health; directory=repository; file=create.sql
+DS_System	(353)	Feb 13, 2017 8:59:50 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.health; directory=repository; file=create.sql
+DS_System	(353)	Feb 13, 2017 8:59:50 AM	INFO    CDIHS0502I:  The Health Summary repository started successfully.
+DS_System	(353)	Feb 13, 2017 8:59:50 AM	INFO    features: {EnableMetrics=false}
+DS_System	(353)	Feb 13, 2017 8:59:50 AM	INFO    CDIHS0500I:  The Health Summary started successfully.
+DS_System	(354)	Feb 13, 2017 8:59:52 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.jobmanager; directory=repository; file=create.sql
+DS_System	(354)	Feb 13, 2017 8:59:52 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.jobmanager; directory=repository; file=create.sql
+DS_System	(367)	Feb 13, 2017 8:59:52 AM	INFO    issSOEnabled: false
+DS_System	(369)	Feb 13, 2017 8:59:52 AM	INFO    issSOEnabled: false
+DS_System	(367)	Feb 13, 2017 8:59:52 AM	INFO    domain=ng.bluemix.net
+DS_System	(367)	Feb 13, 2017 8:59:52 AM	INFO    dashdbrm_url=https://dashdbrm.ng.bluemix.net
+DS_System	(369)	Feb 13, 2017 8:59:52 AM	INFO    domain=ng.bluemix.net
+DS_System	(367)	Feb 13, 2017 8:59:52 AM	INFO    bluemix_mccp_url=https://mccp.ng.bluemix.net
+DS_System	(369)	Feb 13, 2017 8:59:52 AM	INFO    dashdbrm_url=https://dashdbrm.ng.bluemix.net
+DS_System	(367)	Feb 13, 2017 8:59:52 AM	INFO    coreMetricsTag=disabled
+DS_System	(369)	Feb 13, 2017 8:59:52 AM	INFO    bluemix_mccp_url=https://mccp.ng.bluemix.net
+DS_System	(369)	Feb 13, 2017 8:59:52 AM	INFO    coreMetricsTag=disabled
+DS_System	(361)	Feb 13, 2017 8:59:52 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.health.extn; directory=repository; file=create.sql
+DS_System	(361)	Feb 13, 2017 8:59:52 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.health.extn; directory=repository; file=create.sql
+DS_System	(382)	Feb 13, 2017 8:59:52 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.alerts.management; directory=repository; file=create.sql
+DS_System	(382)	Feb 13, 2017 8:59:52 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.alerts.management; directory=repository; file=create.sql
+DS_System	(384)	Feb 13, 2017 8:59:53 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.shs.alerts.notification; directory=repository; file=create.sql
+DS_System	(384)	Feb 13, 2017 8:59:53 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.shs.alerts.notification; directory=repository; file=create.sql
+DS_System	(385)	Feb 13, 2017 8:59:56 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.healthsnapshot.core; directory=repository; file=create.sql
+DS_System	(385)	Feb 13, 2017 8:59:56 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.healthsnapshot.core; directory=repository; file=create.sql
+DS_System	(401)	Feb 13, 2017 9:00:00 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.dsweb.ots.alerts.extn; directory=repository; file=create.sql
+DS_System	(401)	Feb 13, 2017 9:00:00 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.dsweb.ots.alerts.extn; directory=repository; file=create.sql
+DS_System	(402)	Feb 13, 2017 9:00:00 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.basichealth; directory=repositoryV2; file=create.sql
+DS_System	(402)	Feb 13, 2017 9:00:00 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.basichealth; directory=repositoryV2; file=create.sql
+DS_System	(413)	Feb 13, 2017 9:00:01 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.basichealth.db2z; directory=repository; file=create.sql
+DS_System	(413)	Feb 13, 2017 9:00:01 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.basichealth.db2z; directory=repository; file=create.sql
+DS_System	(129)	Feb 13, 2017 9:00:02 AM	INFO    CDIHS0501I:  The Health Summary shut down successfully.
+DS_System	(195)	Feb 13, 2017 9:00:36 AM	INFO    DS_System Logger initialized: 
+
+Component Name                    : DS_System
+Sub Component Name                : 
+Sub Component Prefix              : SYS-LOG
+Log Prefix                        : 
+Init Level                        : 6
+Log FileName                      : DS_System
+(Deduced Absolute Path)           : /opt/ibm-datasrvrmgr/DS_System
+Log Format                        : TEXT
+File Handler                      : true
+File Append                       : true
+Console Handler                   : false
+Rolling Files                     : true
+Max File Size In MB(1 - 20) : 10
+Max Editions(1 - 15)        : 4
+
+DS_System	(220)	Feb 13, 2017 9:00:37 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.core.preferences; directory=repository; file=create.sql
+DS_System	(220)	Feb 13, 2017 9:00:37 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.core.preferences; directory=repository; file=create.sql
+DS_System	(217)	Feb 13, 2017 9:00:37 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.user.auth.privileges; directory=repository; file=create.sql
+DS_System	(217)	Feb 13, 2017 9:00:37 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.user.auth.privileges; directory=repository; file=create.sql
+DS_System	(213)	Feb 13, 2017 9:00:37 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.common.processmgmt; directory=repository; file=create_processmgmt.sql
+DS_System	(213)	Feb 13, 2017 9:00:37 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.common.processmgmt; directory=repository; file=create_processmgmt.sql
+DS_System	(219)	Feb 13, 2017 9:00:37 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.services.scheduler; directory=repository; file=table_create.sql
+DS_System	(219)	Feb 13, 2017 9:00:37 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.services.scheduler; directory=repository; file=table_create.sql
+DS_System	(215)	Feb 13, 2017 9:00:37 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.adm.core.editor; directory=repository; file=create.sql
+DS_System	(215)	Feb 13, 2017 9:00:37 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.adm.core.editor; directory=repository; file=create.sql
+DS_System	(232)	Feb 13, 2017 9:00:37 AM	INFO    OAuth2ExtURLAccessHandler initialized
+DS_System	(214)	Feb 13, 2017 9:00:37 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.adm.core.instance; directory=repository; file=create.sql
+DS_System	(214)	Feb 13, 2017 9:00:37 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.adm.core.instance; directory=repository; file=create.sql
+DS_System	(235)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.common.dbmgt.service; directory=repository; file=create.sql
+DS_System	(235)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.common.dbmgt.service; directory=repository; file=create.sql
+DS_System	(289)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.dsweb.registry.intg; directory=repository; file=create.sql
+DS_System	(289)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.dsweb.registry.intg; directory=repository; file=create.sql
+DS_System	(292)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.dsweb.ots.monlite; directory=repository; file=create.sql
+DS_System	(292)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.dsweb.ots.monlite; directory=repository; file=create.sql
+DS_System	(288)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.datastudio.web; directory=repository; file=create.sql
+DS_System	(288)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.datastudio.web; directory=repository; file=create.sql
+DS_System	(285)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.dsweb.ots.connections; directory=repository; file=create.sql
+DS_System	(285)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.dsweb.ots.connections; directory=repository; file=create.sql
+DS_System	(291)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.common.grp.repository; directory=repository; file=create.sql
+DS_System	(291)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.common.grp.repository; directory=repository; file=create.sql
+DS_System	(285)	Feb 13, 2017 9:00:38 AM	ERROR    ConnectionsService.init: unable to get start BluhelixMetricsCollectionThread
+java.lang.IllegalThreadStateException: Thread is already started
+	at java.lang.Thread.start(Thread.java:943)
+	at com.ibm.datatools.dsweb.ots.connections.ConnectionsService.init(ConnectionsService.java:256)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:473)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(AccessController.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:729)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.completeRefresh(AbstractDelegatedExecutionApplicationContext.java:276)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor$CompleteRefreshTask.run(DependencyWaiterApplicationContextExecutor.java:145)
+	at java.lang.Thread.run(Thread.java:785)
+
+DS_System	(290)	Feb 13, 2017 9:00:38 AM	INFO    DBResourceManagerImpl: Initialization start...
+DS_System	(302)	Feb 13, 2017 9:00:38 AM	INFO    About > IBM Data Server Manager Version 2.1 Release 2.1.2.0, Build 20161122_1954 (C) Copyright IBM Corp. 2015, 2016
+DS_System	(290)	Feb 13, 2017 9:00:38 AM	INFO    DBResourceManagerImpl: Checking for core schema presence...
+DS_System	(308)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.db.connmgt.web; directory=repository; file=create.sql
+DS_System	(308)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.db.connmgt.web; directory=repository; file=create.sql
+DS_System	(290)	Feb 13, 2017 9:00:38 AM	INFO    DBResourceManagerImpl: Initialization complete...
+DS_System	(319)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.health; directory=repository; file=create.sql
+DS_System	(319)	Feb 13, 2017 9:00:38 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.health; directory=repository; file=create.sql
+DS_System	(319)	Feb 13, 2017 9:00:38 AM	INFO    CDIHS0502I:  The Health Summary repository started successfully.
+DS_System	(319)	Feb 13, 2017 9:00:38 AM	INFO    features: {EnableMetrics=false}
+DS_System	(319)	Feb 13, 2017 9:00:38 AM	INFO    CDIHS0500I:  The Health Summary started successfully.
+DS_System	(320)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.jobmanager; directory=repository; file=create.sql
+DS_System	(320)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.jobmanager; directory=repository; file=create.sql
+DS_System	(325)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.health.extn; directory=repository; file=create.sql
+DS_System	(325)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.health.extn; directory=repository; file=create.sql
+DS_System	(332)	Feb 13, 2017 9:00:39 AM	INFO    issSOEnabled: false
+DS_System	(332)	Feb 13, 2017 9:00:39 AM	INFO    domain=ng.bluemix.net
+DS_System	(332)	Feb 13, 2017 9:00:39 AM	INFO    dashdbrm_url=https://dashdbrm.ng.bluemix.net
+DS_System	(332)	Feb 13, 2017 9:00:39 AM	INFO    bluemix_mccp_url=https://mccp.ng.bluemix.net
+DS_System	(332)	Feb 13, 2017 9:00:39 AM	INFO    coreMetricsTag=disabled
+DS_System	(330)	Feb 13, 2017 9:00:39 AM	INFO    issSOEnabled: false
+DS_System	(330)	Feb 13, 2017 9:00:39 AM	INFO    domain=ng.bluemix.net
+DS_System	(330)	Feb 13, 2017 9:00:39 AM	INFO    dashdbrm_url=https://dashdbrm.ng.bluemix.net
+DS_System	(330)	Feb 13, 2017 9:00:39 AM	INFO    bluemix_mccp_url=https://mccp.ng.bluemix.net
+DS_System	(330)	Feb 13, 2017 9:00:39 AM	INFO    coreMetricsTag=disabled
+DS_System	(340)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.alerts.management; directory=repository; file=create.sql
+DS_System	(340)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.alerts.management; directory=repository; file=create.sql
+DS_System	(342)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.shs.alerts.notification; directory=repository; file=create.sql
+DS_System	(342)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.shs.alerts.notification; directory=repository; file=create.sql
+DS_System	(338)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.healthsnapshot.core; directory=repository; file=create.sql
+DS_System	(338)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.healthsnapshot.core; directory=repository; file=create.sql
+DS_System	(364)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.basichealth; directory=repositoryV2; file=create.sql
+DS_System	(364)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.basichealth; directory=repositoryV2; file=create.sql
+DS_System	(365)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.basichealth.db2z; directory=repository; file=create.sql
+DS_System	(365)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.basichealth.db2z; directory=repository; file=create.sql
+DS_System	(363)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: BEGIN > bundle=com.ibm.datatools.dsweb.ots.alerts.extn; directory=repository; file=create.sql
+DS_System	(363)	Feb 13, 2017 9:00:39 AM	INFO    RepositoryContributor.init: END   > bundle=com.ibm.datatools.dsweb.ots.alerts.extn; directory=repository; file=create.sql
+DS_System	(300)	Feb 13, 2017 9:01:08 AM	INFO    com.ibm.datatools.dsweb.ots.connections.thread.TestRepoThread.run: {"isActive":true}
