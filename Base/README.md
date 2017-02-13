@@ -59,4 +59,8 @@ docker run -itd -p 11080:11080 <image-name>
 docker run -itd -p 11080:11080 -v <config-folder>:/opt/ibm-datasrvrmgr/Config -v <log-folder>:/opt/ibm-datasrvrmgr/logs <image-name>
 ```
 
+	e.g. Suppose you've clone this project into "/opt/ci.docker.dsm-enterprise" and your image is called "dsm". You can run:
+
+	docker run -itd -p 11080:11080 -v /opt/ci.docker.dsm-enterprise/Base/example/Config:/opt/ibm-datasrvrmgr/Config -v /opt/ci.docker.dsm-enterprise/Base/example/logs:/opt/ibm-datasrvrmgr/logs dsm
+
 
