@@ -60,7 +60,7 @@ docker run -itd -p 11080:11080 -v <config-folder>:/opt/ibm-datasrvrmgr/Config -v
 ```
 
 
-e.g. Suppose you've clone this project into "/opt/ci.docker.dsm-enterprise", your old dsm container is called "dsm" and your build image called "dsm_image". You can:
+e.g. Suppose you've cloned this project into "/opt/ci.docker.dsm-enterprise", your old dsm container is called "dsm" and your new DSM image is called "dsm_image". You can:
 
     1. Externalize the logs and configs from the old container:
     
