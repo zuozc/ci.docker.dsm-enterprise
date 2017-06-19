@@ -1,0 +1,14 @@
+description: IBM Data Server Manager
+engine: gotpl
+home: https://www.ibm.com/developerworks/cn/downloads/im/dsm/index.html
+keywords:
+- DB2
+- database
+- DSM
+maintainers:
+- email: dsmdev@cn.ibm.com
+  name: dsmdev@cn.ibm.com
+name: dsm
+sources:
+- https://github.com/DSM-dev/ci.docker.dsm-enterprise
+version: 0.1.0 
