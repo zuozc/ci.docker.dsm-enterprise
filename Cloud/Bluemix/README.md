@@ -19,9 +19,9 @@ cf -v
 
  
 Install the IBM® Containers plug-in (cf ic) to run native Docker CLI commands to manage your containers. Please refer to previous link. For example, on Linux 64bit run this command:
- 
+```Bash
 cf install-plugin https://static-ice.ng.bluemix.net/ibm-containers-linux_x64 
-
+```
 1.4  Login to Bluemix
 ```Bash
 cf login -a api.ng.bluemix.net
@@ -44,8 +44,9 @@ This part describes how to upload image to Bluemix. You can refer to https://new
 2.1    Copy the image
 
 You can copy an image into your organization's private Bluemix® repository from Docker hub, Bluemix or your private Bluemix repository.
+```Bash
 cf ic cpi test/dsm registry.ng.bluemix.net/my_namespace/my_dsm
-
+```
 2.2    Verify the image
  Verify that the image exists in your repository by running the images command.
 ```Bash
