@@ -19,61 +19,48 @@ Dockerfile:
 
 Building the IBM Data Server Manager image
 
-    1. Place the downloaded IBM Data Server Manager binaries and unpack to ibm-datasrvrmgr
-
-    2. Edit setup.conf
+    1. Move to the directory base/
     
-    NOTE: To change the default password to login DSM
-	    2.1. RUN .\dsutil\bin\crypt.bat on Windows; RUN .\dsutil\bin\crypt.sh on Linux
-	    2.2. ENTER new password twice and you will get a crypt string for your password
-	    2.3. EDIT setup.conf file, and REPLACE "XXXXXXXXX" in "admin.password=XXXXXXXXX" with your crypt string
-	    2.4. SAVE this file
-     
-    3. Place start_dsm.sh
+    2. Place the downloaded IBM Data Server Manager binaries into Base/ and unpack to ibm-datasrvrmgr
 
-    4. Download the ubuntu 16.04 image
-
-```Bash
-docker pull ubuntu:16.04
-```
-
-    5. Move to the directory base/
-
-    6. Build the image by using:
+    3. Build the image by using:
 
 ```Bash
 docker build  -t <image-name> -f Dockerfile .
 ```
                             
-Run and Deploy IBM Data Server Manager image and expose port 11080
+Run and Deploy IBM Data Server Manager image and expose port 11080&11081
 
     1. Mount nothing: this will create a clean DSM container
     
 ```Bash
-docker run -itd -p 11080:11080 <image-name>
+docker run -itd -p 11080:11080 -p 11081:11081 <image-name>
 ```
 	
     2. Mount Config files and logs: this will create a DSM container using config files and logs specified
     
 ```Bash
-docker run -itd -p 11080:11080 -v <config-folder>:/opt/ibm-datasrvrmgr/Config -v <log-folder>:/opt/ibm-datasrvrmgr/logs <image-name>
+docker run -itd -p 11080:11080 -p 11081:11081 -v <config-folder>:/opt/ibm-datasrvrmgr/Config -v <log-folder>:/opt/ibm-datasrvrmgr/logs <image-name>
 ```
-
 
 e.g. Suppose you've cloned this project into "/opt/ci.docker.dsm-enterprise", your old dsm container is called "dsm" and your new DSM image is called "dsm_image". You can:
 
-    1. Externalize the logs and configs from the old container:
+    2.1 Externalize the logs and configs from the old container:
     
 ```Bash
 docker exec -it dsm bash
 scp -r /opt/ibm-datasrvrmgr/Config root@<host-ip>:/opt/ci.docker.dsm-enterprise/Base/example
 scp -r /opt/ibm-datasrvrmgr/logs root@<host-ip>:/opt/ci.docker.dsm-enterprise/Base/example
-exit
 ```
 
-    2. Mount logs and configs back to a new container:
+    2.2 Mount logs and configs back to a new container:
 
 ```Bash
-docker run -itd -p 11080:11080 -v /opt/ci.docker.dsm-enterprise/Base/example/Config:/opt/ibm-datasrvrmgr/Config -v /opt/ci.docker.dsm-enterprise/Base/example/logs:/opt/ibm-datasrvrmgr/logs dsm_image
+docker run -itd -p 11080:11080 -v /opt/ci.docker.dsm-enterprise/Base/example/Config:/opt/ibm-datasrvrmgr/Config -v /opt/ci.docker.dsm-enterprise/Base/example/logs:/opt/ibm-datasrvrmgr/logs <image-name> 
 ```
+    3. Set default user and repository database: you can set default user profile and repository database` by env vars.
+
+```Bash
+docker run -itd -p 11080:11080 -p 11081:11081 -e DSM_ADMIN=\<admin user name\>  -e DSM_ADMIN_PWD=\<admin password\> -e DSM_REPODB_IP=\<RepoDB IP address\> -e DSM_REPODB_PORT=\<RepoDB port\> -e DSM_REPODB_USER=\<RepoDB user name\> -e DSM_REPODB_PWD=\<RepoDB password\> -e DSM_REPODB_NAME=\<RepoDB name\> <image-name>
+``` 
 
