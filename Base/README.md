@@ -19,7 +19,7 @@ Dockerfile:
 
 Building the IBM Data Server Manager image
 
-    1. Move to the directory base/
+    1. Move to the directory Base/
     
     2. Place the downloaded IBM Data Server Manager binaries into Base/ and unpack to ibm-datasrvrmgr
 
@@ -58,9 +58,9 @@ scp -r /opt/ibm-datasrvrmgr/logs root@<host-ip>:/opt/ci.docker.dsm-enterprise/Ba
 ```Bash
 docker run -itd -p 11080:11080 -v /opt/ci.docker.dsm-enterprise/Base/example/Config:/opt/ibm-datasrvrmgr/Config -v /opt/ci.docker.dsm-enterprise/Base/example/logs:/opt/ibm-datasrvrmgr/logs <image-name> 
 ```
-    3. Set default user and repository database: you can set default user profile and repository database` by env vars.
+    3. Set default user and repository database: you can set default user profile and repository databases by env vars.
 
 ```Bash
-docker run -itd -p 11080:11080 -p 11081:11081 -e DSM_ADMIN=\<admin user name\>  -e DSM_ADMIN_PWD=\<admin password\> -e DSM_REPODB_IP=\<RepoDB IP address\> -e DSM_REPODB_PORT=\<RepoDB port\> -e DSM_REPODB_USER=\<RepoDB user name\> -e DSM_REPODB_PWD=\<RepoDB password\> -e DSM_REPODB_NAME=\<RepoDB name\> <image-name>
+docker run -itd -p 11080:11080 -p 11081:11081 -e DSM_ADMIN=<admin user name> -e DSM_ADMIN_PWD=<admin password> -e DSM_REPODB_IP=<RepoDB IP address> -e DSM_REPODB_PORT=<RepoDB port> -e DSM_REPODB_USER=<RepoDB user name> -e DSM_REPODB_PWD=<RepoDB password> -e DSM_REPODB_NAME=<RepoDB name> <image-name>
 ``` 
 
