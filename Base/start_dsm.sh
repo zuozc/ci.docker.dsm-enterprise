@@ -43,6 +43,21 @@ else
   sed -i "s/#repositoryDB.securityMechanism=9/repositoryDB.securityMechanism=9/" /opt/ibm-datasrvrmgr/setup.conf
 fi
 
+if [ -d /opt/ibm-datasrvrmgr/Config ]; then
+  echo "Old config file exists, will run upgrade on dsm with existing config file"
+  if [ `ls /opt/ibm-datasrvrmgr/logs | wc -l` -gt 0 ]; then
+     echo "Old logs file exists, will run upgrade on dsm with existing logs file"
+  else
+     echo "Old logs file does exist, will run upgrade on dsm with empty logs file"
+  fi 
+  mkdir -p /opt/ibm-datasrvrmgr/dscomponents_with_rep
+  mkdir -p /opt/ibm-datasrvrmgr/dscomponents
+  mkdir -p /opt/ibm-datasrvrmgr/java
+  mkdir -p /opt/ibm-datasrvrmgr/license
+else
+  echo "Old config file does not exist, setup a new dsm service"
+fi
+
 sh /opt/ibm-datasrvrmgr/setup.sh -silent
 sh /opt/ibm-datasrvrmgr/bin/stop.sh
 
