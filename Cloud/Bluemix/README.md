@@ -12,9 +12,9 @@ For Windows and OS X operating systems, Docker is installed along with the Docke
 1.2   Install Cloud Foundry CLI 
 Install Cloud Foundry CLI version 6.14.0 - 6.16.0 from the GitHub repository. You must install the Cloud Foundry CLI in the default location for your operating system, otherwise the PATH environment variable does not match your installation directory. 
 To verify that the Cloud Foundry CLI is installed properly or, if you already installed the Cloud Foundry CLI, to check which version you installed, run the following command:
- 
+```Bash 
 cf -v
- 
+```
 1.3   Install CLI container plugin
 
  
@@ -23,18 +23,18 @@ Install the IBM® Containers plug-in (cf ic) to run native Docker CLI commands t
 cf install-plugin https://static-ice.ng.bluemix.net/ibm-containers-linux_x64 
 
 1.4  Login to Bluemix
-
+```Bash
 cf login -a api.ng.bluemix.net
-
+```
 Input your IBM ID and password and select organization and space.
 Then login to ic plug-in:
-
+```Bash
 cf ic login
-
+```
 Set the namespace for your organization if this is the first time a user has logged in to your organization.
-
+```Bash
 cf ic namespace set <new_name>
-
+```
 If you do not know your organization's namespace, you can run cf ic namespace get after running cf ic login.
 
 2     Add image to private repository
@@ -48,13 +48,17 @@ cf ic cpi test/dsm registry.ng.bluemix.net/my_namespace/my_dsm
 
 2.2    Verify the image
  Verify that the image exists in your repository by running the images command.
+```Bash
 cf ic images
- 
+```
 3    Create container based on DSM image 
 Now you can create your container from the image you upload
 
 The provided shell script simplified the process:
-
+```Bash
 ./uploadConImg.sh ng.bluemix.net dw_dsm dsmv21 dsm.tar dsmv21
+```
 or
+```Bash
 ./uploadConImg.sh ng.bluemix.net dw_dsm dsmv21 <imageID>
+```
