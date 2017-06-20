@@ -1,37 +1,18 @@
-## mysql image version
+## DSM image version
 ## ref: https://hub.docker.com/r/library/mysql/tags/
 ##
 image:
   repository: "docker-registry.stage1.edge.bluemix.net/library/dsm" 
   tag: "2.1.4"
 replicaCount: 1
-## Specify password for root user
-##
-## Default: random 10 character string
-# mysqlRootPassword: testing
 
-## Create a database user
-##
-# mysqlUser:
-# mysqlPassword:
 
-## Allow unauthenticated access, uncomment to enable
-##
-# mysqlAllowEmptyPassword: true
-
-## Create a database
-##
-# mysqlDatabase:
-
-## Specify an imagePullPolicy (Required)
-## It's recommended to change this to 'Always' if the image tag is 'latest'
-## ref: http://kubernetes.io/docs/user-guide/images/#updating-images
-##
 imagePullPolicy: IfNotPresent
 service:
   externalPort: 11080
   internalPort: 11080
   type: NodePort
+
 ## Persist data to a persitent volume
 persistence:
   enabled: true
@@ -51,3 +32,8 @@ resources:
     cpu: 2 
 ingress:
   hostname: 127.0.0.1
+
+## Default user and password to login
+setup:
+  dsmAdmin: admin
+  dsmAdminPwd: password

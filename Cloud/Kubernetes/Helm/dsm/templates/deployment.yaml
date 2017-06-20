@@ -15,6 +15,21 @@ spec:
       - name: {{ .Chart.Name }}
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
+        env:
+        - name: DSM_ADMIN
+          value: "{{ .Values.setup.dsmAdmin }}"
+        - name: DSM_ADMIN_PWD
+          value: "{{ .Values.setup.dsmAdminPwd }}"
+        - name: DSM_REPODB_IP
+          value: "{{ .Values.setup.repoDB.IP }}"
+        - name: DSM_REPODB_PORT
+          value: "{{ .Values.setup.repoDB.port }}"
+        - name: DSM_REPODB_USER
+          value: "{{ .Values.setup.repoDB.user }}"
+        - name: DSM_REPODB_PWD
+          value: "{{ .Values.setup.repoDB.pwd }}"
+        - name: DSM_REPODB_NAME
+          value: "{{ .Values.setup.repoDB.name }}"
         ports:
         - containerPort: {{ .Values.service.internalPort }}
         livenessProbe:
