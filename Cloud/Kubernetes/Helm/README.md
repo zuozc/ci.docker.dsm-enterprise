@@ -1,7 +1,7 @@
 
 This directory contains files to create a Helm chart for DSM.
 
-1. Package files to chart:
+1. Package files to chart then a tgz file dsm-0.1.0.tgz created in current directory:
 ```Bash
 Helm package dsm
 ```
