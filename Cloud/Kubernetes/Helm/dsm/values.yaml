@@ -2,7 +2,7 @@
 ## ref: https://hub.docker.com/r/library/mysql/tags/
 ##
 image:
-  repository: "docker-registry.stage1.edge.bluemix.net/library/dsm" 
+  repository: "cdsdev.cumulusrepo.com/hydra_devtest/dsm" 
   tag: "2.1.4"
 replicaCount: 1
 
