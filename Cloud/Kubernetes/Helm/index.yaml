@@ -1,0 +1,22 @@
+apiVersion: v1
+entries:
+  dsm:
+  - apiVersion: v1
+    created: 2017-06-06T10:33:02.800784489Z
+    description: Data Server Manager
+    digest: 4d1f14f9f2f893460e614bd4077096ef1783b0d0a2a8d8d0f2e65586fde07190
+    icon: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/microservicebuilder/icon.png
+    name: fabric
+    urls:
+    - https://github.com/DSM-dev/ci.docker.dsm-enterprise/tree/master/Cloud/Kubernetes/Helm/dsm-0.1.0.tgz
+    version: 0.1.0
+  mysql:
+  - apiVersion: v1
+    created: 2017-06-06T10:33:02.801909861Z
+    description: MySQL
+    icon: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/microservicebuilder/icon.png
+    name: pipeline
+    urls:
+    - https://github.com/DSM-dev/ci.docker.dsm-enterprise/tree/master/Cloud/Kubernetes/Helm/mysql-0.2.6.tgz
+    version: 0.2.6
+generated: 2017-06-06T10:33:02.799077378Z
